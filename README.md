@@ -1,3 +1,7 @@
+link direto 
+
+https://srgames22.github.io/projeto-visionario-srgames/#
+
 fiz esse site para um amigo.
 contem o menu lateral funcional 
 os itens do menu funcionam (somente 
