@@ -1,0 +1,408 @@
+body {
+    font-family: 'Madina' sans-serif;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: black;
+    padding: 40px 0 40px 1%;
+    box-shadow: 0 0 10px purple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 100;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.btn-expandir > i {
+    color: aqua;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.item-menu {
+    margin-bottom: 8px;
+}
+
+ul li.ativo {
+    background-color: purple;
+}
+
+ul li.item-menu:hover {
+    background-color: purple;
+}
+
+ul li.item-menu a {
+    font-family: "Escola";
+    color: aqua;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px 4%;
+    display: flex;
+    align-items: center;
+    line-height: 36px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cabecalho .logo {
+    width: 80px;
+    border-radius: 25px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.informacoes-titulo-principal {
+    margin: 10px auto 25px;
+    display: flex;
+    width: 500px;
+    height: 75px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-supremo {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #800080;
+    color: rgb(6, 255, 251);
+    font-family: "Madina";
+    letter-spacing: 8px;
+    font-size: 50px;
+    text-align: center;
+    margin-right: 235px;
+
+}
+
+.imagem-fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;         
+    object-fit: cover; 
+    opacity: 0.85; 
+    pointer-events: none; 
+}
+
+.login-container {
+    background-color: rgba(15, 0, 35, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 300px;
+    z-index: 10;
+    
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    margin-right: 100px;        
+    width: 280px;           
+    flex-shrink: 0;              
+    z-index: 10;
+}
+
+.view-counter {
+    color: #00ffff;
+    font-family: "Escola";
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 300px;
+    font-size: 15px;
+    z-index: 10;
+    
+}
+
+.listagem-frases {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.cartao-frase {
+    background-color: rgb(152, 9, 152);
+    width: 180px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    padding: 14px;
+}
+
+.cartao-frase:hover {
+    background-color: aqua;
+    transform: scale(1.05);
+}
+
+.cartao-frase .informacoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px 8px;
+}
+
+.cartao-frase .informacoes span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: aqua;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.descricao {
+    flex: 1;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: "Escola";
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    padding: 0 8px;
+}
+
+main .personagem {
+    width: 360px;
+    height: 480px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cartao-fundo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 240px;
+    height: 380px; 
+}
+
+.imagem-lateral-noctis {
+    width: 360px;
+    height: 480px; 
+}
+
+.login-container h2 {
+    color: aqua;
+    margin-bottom: 20px;
+    font-family: "Madina";
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #222;
+    border: 2px solid purple;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.login-container button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #1a0033, #0f001a);
+    padding: 30px 35px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 520px;
+    border: 3px solid #8a2be2;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.6);
+}
+
+.modal-content h2 {
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: "Madina";
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 12px 0;
+    background-color: #1f0033;
+    border: 2px solid #8a2be2;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.modal-content textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: "Escola";
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.modal-buttons button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#cancel-btn {
+    background-color: #4a4a4a;
+    color: #ddd;
+}
+
+#cancel-btn:hover {
+    background-color: #666;
+}
+
+.modal-buttons button[type="submit"] {
+    background: linear-gradient(90deg, #8a2be2, #ff00ff);
+    color: white;
+}
+
+.modal-buttons button[type="submit"]:hover {
+    background: linear-gradient(90deg, #00ffff, #8a2be2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.frase-actions {
+    margin-top: 12px;
+    text-align: right;
+}
+
+.delete-btn {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #cc0044;
+    transform: scale(1.05);
+}
+
+@font-face {
+    font-family: "Madina";
+    src: url(../fontes/Madina.TTf);
+}
+
+@font-face {
+    font-family: "Escola";
+    src: url(../fontes/Escola.ttf);
+}

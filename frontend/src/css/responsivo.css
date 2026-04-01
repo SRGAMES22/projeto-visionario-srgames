@@ -1,0 +1,168 @@
+    .personagem {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 54vh;
+        z-index: -1;
+        opacity: 0.68;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        pointer-events: none;
+    }
+
+    .imagem-lateral-noctis {
+        width: 70%;
+        max-width: 290px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .descricao {
+        font-size: 14.2px;
+        line-height: 1.5;
+        flex-wrap: wrap;
+    }
+
+@media (min-width: 200px) and (max-width: 840px) {
+    main {
+        max-width: 330px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 7%;
+        gap: 20px;
+    }
+
+    .cabecalho {
+        margin-right: 70px;
+    }
+
+    .informacoes-titulo-principal {
+        width: 180px;
+        margin: 0 80px 0 0;
+        padding: 8px 0;
+        border-radius: 14px;
+    }
+
+    .titulo-supremo {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    .personagem {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50vh;
+        opacity: 0.73;
+    }
+
+    .listagem-frases {
+        max-width: 330px;
+        margin: 0 auto;
+
+    }
+
+    .login-container {
+        max-width: 250px;
+        margin-right: 70px;
+    }
+
+    .view-counter {
+        max-width: 300px;
+        margin-left: 40px;
+        background-color: rgba(24, 10, 232, 0.8);
+    }
+
+    .cartao-frase {
+        margin-right: 70px;
+        background-color: rgba(156, 46, 246, 0.9);
+    }
+}
+
+    .personagem {
+        width: 40%;
+        opacity: 0.88;
+    }
+
+
+@media (max-width: 1200px) {
+    .imagem-fundo {
+        display: none;
+    }
+
+    .menu-lateral {
+        width: 70px;
+    }
+
+    .menu-lateral.expandir {
+        width: 265px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .cartao-frase:active {
+        transform: scale(0.97);
+    }
+}
+
+
+
+
+@media (min-width: 840px) and (max-width: 1290px) {
+
+ main {
+        max-width: 800px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 7%;
+        gap: 20px;
+    }
+
+    .cabecalho {
+        margin-right: 70px;
+    }
+
+    .informacoes-titulo-principal {
+        width: 500px;
+        margin: 0 70px 0 0;
+        padding: 8px 0;
+        border-radius: 14px;
+    }
+
+    .titulo-supremo {
+        font-size: 300%;
+        padding-left: 60px;
+    }
+
+    .personagem {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50vh;
+        opacity: 0.73;
+    }
+
+    .listagem-frases {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
+
+    }
+
+    .login-container {
+        max-width: 250px;
+        margin-right: 250px;
+    }
+
+    .view-counter {
+        max-width: 250px;
+        margin-right: 70px;
+    }
+
+}

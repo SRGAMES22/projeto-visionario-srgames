@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    // Ambiente do navegador (não Node.js)
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+
+    // Saída
+    "outDir": "./src/js",
+    "rootDir": "./src/ts",
+
+    // Para rodar direto no navegador sem bundler pesado
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Type checking forte, mas sem exageros para projeto pequeno
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Não precisamos de JSX nem lib DOM extra (já vem no navegador)
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    // Evita erros comuns em projetos sem bundler
+    "skipLibCheck": true,
+    "isolatedModules": true,
+
+    // Gera sourcemaps para debug no navegador
+    "sourceMap": true,
+
+    // Remove comentários e deixa o JS limpo
+    "removeComments": true
+  },
+
+  "include": [
+    "src/ts/**/*.ts"
+  ],
+
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
