@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Visionário Frases
 
 Projeto de frases motivacionais com sistema de administração.
@@ -58,3 +59,18 @@ Depois de salvar o README, volte ao terminal e digite:
 
 ```powershell
 git status
+=======
+link direto 
+
+https://srgames22.github.io/projeto-visionario-srgames/#
+
+fiz esse site para um amigo.
+contem o menu lateral funcional 
+os itens do menu funcionam (somente 
+quando tiver o link para onde leva, 
+nesse caso é uma demonstração, então 
+não tem link)
+os conteúdos com frases motivacionais
+e com o efeito de expansão ao passar
+o mouse (também muda de cor)
+>>>>>>> a35f01bba753b9581eb448933da4d73610bd51ba

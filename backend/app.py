@@ -53,17 +53,18 @@ def load_user(user_id):
 with app.app_context():
     db.create_all()
 
-    if User.query.filter_by(role='admin').count() == 0:
-        derik = User(username='', role='admin')
-        derik.set_password('')
+    # Cria admins apenas se não existirem
+    if not User.query.filter_by(username='derik').first():
+        derik = User(username='derik', role='admin')
+        derik.set_password('#10void22')
         db.session.add(derik)
 
-        klaus = User(username='', role='admin')
-        klaus.set_password('')
+    if not User.query.filter_by(username='klaus').first():
+        klaus = User(username='klaus', role='admin')
+        klaus.set_password('@22shadown14')
         db.session.add(klaus)
-        
-        db.session.commit()
-        print("✅ Admins 'derik' e 'klaus' criados com sucesso!")
+
+    db.session.commit()
 
     if not PageView.query.first():
         db.session.add(PageView(views=0))
@@ -99,11 +100,7 @@ def add_frase():
     db.session.add(nova_frase)
     db.session.commit()
 
-    return jsonify({
-        'id': nova_frase.id,
-        'titulo': nova_frase.titulo,
-        'texto': nova_frase.texto
-    }), 201
+    return jsonify({'id': nova_frase.id, 'titulo': nova_frase.titulo, 'texto': nova_frase.texto}), 201
 
 
 @app.route('/api/frases/<int:frase_id>', methods=['DELETE'])
